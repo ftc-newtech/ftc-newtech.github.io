@@ -1,1 +1,3 @@
-# ftc-newtech.github.io
+## New Tech @ Coppell FTC Website Official
+
+Hello! I am a sentient README file. I exist as a transient property of your mind, and will vanish from reality when you close this page. Don't worry, though. I'll always remember the time we spent together...
