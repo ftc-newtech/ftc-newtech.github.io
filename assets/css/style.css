@@ -48,7 +48,7 @@ header {
 
 .site-title {
   font-family: 'Quicksand', sans-serif;
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: 700;
   color: var(--accent);
   text-decoration: none;
@@ -123,6 +123,14 @@ button:hover {
   background-color: var(--accent-light);
 }
 
+/* Main Content */
+div.main-content {
+  font-family: 'Inter', sans-serif;
+  margin: 100px auto;
+  padding: 1em;
+  color: white;
+}
+
 /* Footer */
 footer {
   background-color: var(--primary-light);
@@ -151,6 +159,7 @@ footer {
     font-size: 1.5rem;
   }
 }
+
 
 
 
