@@ -1,10 +1,153 @@
-body {
-  background-color: #97ACE8;
-  color: white;
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Quicksand:wght@400;600&display=swap');
+
+:root {
+  /* Team Colors */
+  --primary-hue: 230; /* Deep Blue */
+  --accent-hue: 310;  /* Pink */
+
+  /* Derived Colors */
+  --primary: hsl(var(--primary-hue), 60%, 20%);
+  --primary-light: hsl(var(--primary-hue), 60%, 30%);
+  --accent: hsl(var(--accent-hue), 70%, 55%);
+  --accent-light: hsl(var(--accent-hue), 70%, 65%);
+  --text-light: #ffffff;
+  --text-dark: #1a1a1a;
+  --bg-light: #f9f9f9;
 }
 
-h1 {
-  font-size: 250%;
-  text-align: center;
+/* Reset and Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  font-family: 'Inter', 'Quicksand', sans-serif;
+  background: linear-gradient(135deg,
+    hsl(230, 60%, 20%) 0%,
+    hsl(230, 60%, 25%) 40%,
+    hsl(310, 70%, 55%) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--text-light);
+  line-height: 1.6;
+  font-size: 16px;
+  margin: 100px;
+}
+
+/* Header with Centered Title */
+header {
+  text-align: center;
+  margin: auto;
+  padding: 2rem 1rem 1rem;
+}
+
+.site-title {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 0.5rem 0 1.5rem;
+}
+
+nav a {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: var(--text-light);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Main Content */
+main {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  padding: 2rem;
+  border-top: 2px solid var(--accent);
+}
+
+/* Sections */
+section {
+  margin-bottom: 2rem;
+  border-left: 4px solid var(--accent);
+  padding-left: 1rem;
+}
+
+section h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.75rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+section p {
+  font-size: 1rem;
+}
+
+/* Buttons */
+button {
+  background-color: var(--accent);
+  color: var(--text-light);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--accent-light);
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-light);
+  color: var(--text-light);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .site-title {
+    font-size: 2.2rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+}
+
 
