@@ -79,14 +79,6 @@ nav a:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Main Content */
-main {
-  background-color: var(--bg-light);
-  color: var(--text-dark);
-  padding: 2rem;
-  border-top: 2px solid var(--accent);
-}
-
 /* Sections */
 section {
   margin-bottom: 2rem;
@@ -126,9 +118,11 @@ button:hover {
 /* Main Content */
 div.main-content {
   font-family: 'Inter', sans-serif;
-  margin: 100px auto;
-  padding: 1em;
+  margin: 100px;
   color: white;
+  background-color: var(--bg-light);
+  padding: 2rem;
+  border-top: 2px solid var(--accent);
 }
 
 /* Footer */
@@ -159,6 +153,7 @@ footer {
     font-size: 1.5rem;
   }
 }
+
 
 
 
