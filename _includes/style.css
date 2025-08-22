@@ -23,17 +23,20 @@
   padding: 0;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: 'Inter', 'Quicksand', sans-serif;
   background: linear-gradient(135deg,
     hsl(230, 60%, 20%) 0%,
     hsl(230, 60%, 25%) 40%,
     hsl(310, 70%, 55%) 100%);
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
-  color: var(--text-light);
-  line-height: 1.6;
-  font-size: 16px;
   margin: 100px;
 }
 
@@ -149,5 +152,6 @@ footer {
     font-size: 1.5rem;
   }
 }
+
 
 

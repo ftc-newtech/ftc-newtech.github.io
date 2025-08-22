@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>{{ page.title }} - FTC New Tech</title>
-        <meta charset="UTF-8">
-        <style>
-            {% include style.css %}
-        </style>
+      <meta charset="UTF-8">
+      <title>{{ page.title }} - FTC New Tech</title>
+      <link rel="stylesheet" href="/style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
     </head>
     <body>
-        {% include header.html %}
-        {{ content }}
+      {% include header.html %}
+      {{ content }}
     </body>
 </html>
